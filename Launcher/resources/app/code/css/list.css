@@ -1,0 +1,135 @@
+.list {
+    max-height: 100%;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'Neris';
+    font-style: normal;
+    font-weight: 300;
+    transition: .8s top; }
+.list ul
+    {width: 100%; overflow-x: hidden; transition: 0.6s all;  }
+.list ul li {
+    width: 97%;
+    height: 50px;
+    padding: 15px 0 0 30px;
+    color: #fff;
+    font-size: 26px;
+    transition-property: height, font-size, padding-left, background;
+    transition-duration: .25s; }
+.list ul li:hover {
+    font-size: 28px ;
+    background: rgba(60, 60, 60, .2); }
+.list ul li.category {
+    padding: 0;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+.list ul li.category a {
+    width: auto; }
+.list ul li.category:hover {
+    font-size: 26px ;
+    background: transparent }
+.games_wrapp ul li a, .progs_wrapp ul li a  {
+    white-space: nowrap;
+    width: 65%;
+    display: inline-block;
+    overflow-x: hidden; }
+.films_wrapp ul li a,  .mults_wrapp ul li a {
+    white-space: nowrap;
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    transition: .3s width;
+    overflow-x: auto; }
+.films_wrapp ul li a::-webkit-scrollbar,
+    .mults_wrapp ul li a::-webkit-scrollbar { width: 8px; }
+/**********************************************************************************/
+.run {
+    position: relative;
+    top: 4px;
+    right: 35px;
+    width: 70px;
+    height: 30px;
+    border-radius: 2px;
+    float: right;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.3;
+    border: 1px solid rgba(122,122,122,0.3);
+}
+.run:hover { background: rgba(122,122,122,0.2); }
+.list_box {
+    position: relative;
+    top: 4px;
+    right: 25px;
+    width: 35px;
+    height: 30px;
+    border-radius: 3px;
+    float: right;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid rgba(122,122,122,0.3);
+}
+.list_box:hover { background: rgba(122,122,122,0.2); }
+.list_box span {
+    content: " ";
+    top: -7px;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+/**********************************************************************************/
+.list_menu {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 27px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 2px;
+    padding: 6px 0px;
+    font-family: 'Neris';
+    font-style: normal;
+    font-weight: 300;
+    transition: .6s flex;
+    color: white;
+    background: rgba(46, 46, 48, 1);
+}
+.list_menu div {
+    display: flex;
+    line-height: 32px;
+    padding: 0px 20px;
+    min-width: 150px;
+    min-height: 35px;
+}
+.list_menu div.blocked {
+    background: rgba(0,0,0,0.4);
+    color: rgba(255,255,255,0.4);
+}
+.list_menu div:hover { background: rgba(0, 0, 0, 0.4); }
+.box_borderless {
+    border: 1px solid #8a8a8a47;
+    border-radius: 0;
+    background: rgba(122,122,122,0.2);
+}
+.menu_borderless {
+    border: 1px solid #8a8a8a47;
+    border-radius: 0;
+}
+.veil {
+    display: none;
+    z-index: 8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

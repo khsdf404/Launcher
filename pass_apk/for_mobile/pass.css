@@ -1,0 +1,144 @@
+html {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #202020, #111119);
+}
+body {
+    overflow: hidden;
+    margin: 0;  padding: 0;
+    cursor: default;
+    -webkit-user-select: none;   }
+li { list-style-type: none; }
+ul { margin: 0;   padding: 0; }
+a { text-decoration: none; color: #fff; -webkit-user-drag: none; }
+::-webkit-scrollbar { width: 0px; }
+
+
+.wrapp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 100;
+  overflow: hidden;
+  margin-top: 17%;
+}
+
+
+
+.pass_wrapp {
+    flex: 1;
+    overflow: hidden;
+    display: block;
+    font-family: "Neris";
+    transition: 1s flex; }
+.pass_wrapp ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.6s all; }
+.pass_wrapp ul li {
+    width: 97%;
+    height: 50px;
+    padding: 17px 0 0 30px;
+    color: #fff;
+    font-size: 26px;
+    transition-property: height, font-size, padding-left, background;
+    transition-duration: .25s;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;}
+.pass_input_div {
+    width: 249px;
+    left: 2px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #fff; }
+.pass_input {
+    background: none;
+    border:none;
+    /* border-bottom: 1px solid #fff; */
+    color: #fff;
+    display: block;
+    font-family: "Certege";
+    font-size: 20px;
+    padding: 10px;
+    /* text-align: center; */
+    width: 180px;
+    outline: none; }
+.pass_input_div div {
+    margin-left: 11px;
+    width: 32px;
+    height: 32px; }
+.pass_input_div .fa-eye-slash { background: url(eye-slash.png); }
+.pass_input_div .fa-eye { background: url(eye.png); }
+.fa-eye-slash.non_blur::before { content: " " }
+.fa-eye.non_blur::before { content: " " }
+.fa-eye-slash.non_blur::after { content: " " }
+.fa-eye.non_blur::after { content: " " }
+
+.pass_wrapp .column {
+    position: relative;
+    overflow-x: hidden;
+    top: 15px;
+    width: 250px;
+    height: 316px; /*378*/
+    margin-left: 5px; }
+.pass_wrapp .column2 { margin-bottom: 10px; }
+
+.pass_wrapp .column::-webkit-scrollbar { width: 0px; }
+.pass_wrapp .column div:last-child { margin-bottom: 6px; }
+.blur { filter: blur(6px); }
+.opacity { opacity: 0; }
+.pass_wrapp .columns {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*row*/
+    align-items: center;
+    justify-content: center; }
+.pass_wrapp .p_case {
+    height: 40px;
+    overflow: hidden;
+    text-align: center;
+    transition: .25s;
+    margin-top: 10px;
+    padding: 5px 0;
+    border: 1px solid rgba(255,255,255,0.1);
+    line-height: 1.3; }
+.pass_wrapp .p_login, .pass_wrapp .p_password
+    { opacity: 0 }
+.pass_wrapp .pass_active {
+    height: 102px;
+    text-indent: 17px;
+    text-align: start; }
+.pass_wrapp .p_case i {
+    opacity: 1;
+    position: absolute;
+    font-size: 16px;
+    top: 4px;
+    right: 14px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0px;
+    border-radius: 2px;
+    border: 1px solid rgba(122,122,122,0.3); }
+.pass_wrapp .p_case i:hover { background: rgba(120,120,120,0.5); }
+.pass_wrapp .p_name {
+    margin-bottom: 3px;
+    position: relative; }

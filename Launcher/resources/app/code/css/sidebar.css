@@ -1,0 +1,101 @@
+.sidebar {
+    opacity: 0;
+    position: relative;
+    flex: 5;
+    min-width: 61px;
+    /*background: url(https://assets0.ello.co/uploads/user/cover_image/1037080/ello-optimized-fae631a2.jpg);*/
+    background: url(dotted7.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 2.3;
+    font-size: 18px;
+    transition: opacity 1.5s, .5s flex;}
+.sidebar .sidebar_veil {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.83); }
+.sidebar ul { height: 80%; overflow-y: auto; overflow-x: hidden; }
+.sidebar ul::-webkit-scrollbar { width: 0px; }
+.sidebar ul::-webkit-scrollbar-track { background: transparent; }
+.sidebar .margin_top {
+    position: relative;
+    width: 100%;
+    height: 43px;
+}
+.sidebar li {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0% 12px;
+    border-bottom: 1px solid rgb(66, 69, 76, 0.4);
+    overflow: hidden;
+    line-height: 3.3;
+    transition: 0.35s all; }
+.sidebar li:last-child {
+    border-bottom: none }
+.sidebar li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    margin-right: 12px;
+    font-size: 26px;
+    line-height: 1.3;
+    transition: .25s all }
+/*.sidebar:hover { flex: 23; } */
+.sidebar li:hover { background: #007bff }
+/* .sidebar:hover .sidebar li div {
+    margin-right: 6px;
+    font-size: 18px; } */
+/* .sidebar:hover .sidebar ul::-webkit-scrollbar { width: 8px; } */
+.sidebar .footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 40px;
+    padding: 0 10px;
+    border-top: 1px solid rgb(66, 69, 76, 0.4);
+    width: -webkit-fill-available;
+    z-index: 1 }
+/*********************************************************************/
+.sidebar .footer div {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidebar .footer i:hover, .sidebar .footer span:hover
+    { background-color: rgba(255, 255, 255, 0.25); }
+.sidebar .footer i {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; height: 30px;
+    margin: 5px 6px 5px 5px;
+    padding: 1px 1px 0 0;
+}
+.sidebar .switch_cards {
+    position: relative;
+    top: 7px;
+    float: left; 
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Neris";
+    line-height: 24px;
+}
+.sidebar .switch_cards:hover { background: rgba(255,255,255,0.25); }

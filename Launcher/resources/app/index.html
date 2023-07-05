@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Launcher</title>
+    <link href="code/css/add.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/bb.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/cards.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/test.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/list.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/pass.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/sapper.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/search.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/sidebar.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/all.min.css" rel="stylesheet" type="text/css"/>
+    <link href="code/css/fonts.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="code/js/bb.js"></script>
+    <script type="text/javascript" src="code/js/cards.js"></script>
+    <script type="text/javascript" src="code/js/test.js"></script>
+    <script type="text/javascript" src="code/js/list.js"></script>
+    <script type="text/javascript" src="code/js/passwords.js"></script>
+    <script type="text/javascript" src="code/js/render.js"></script>
+    <script type="text/javascript" src="code/js/sapper.js"></script>
+    <script type="text/javascript" src="code/js/search.js"></script>
+    <script type="text/javascript" src="code/js/sidebar.js"></script>
+
+    <script type="text/javascript" src="code/config.json"></script>
+    <script type="text/javascript" src="code/js/jquery/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="code/js/jquery/jquery.shuffleLetters.js"></script>
+    <script type="text/javascript" src="code/js/jquery/jquery-ui.min.js"></script>
+    <link href="code/js/jquery/jquery-ui.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="pseudo_body">
+        <!-- <div class="rain front-row"></div>
+        <div class="rain back-row"></div> -->
+    </div>
+    <div class="main">
+        <div class="config_window">
+            <div class="wrapp">
+                <div class="inputs">
+                    <div class="form-group form_name">
+                        <span>Name</span>
+                        <input class="form-field inp_name" type="text" >
+                    </div>
+                    <div class="form-group form_path">
+                        <span>Path</span>
+                        <input class="form-field inp_path" type="text" >
+                    </div>
+                    <div class="form-group form_dlink">
+                        <span>DLink</span>
+                        <input class="form-field inp_dl_link" type="text" >
+                    </div>
+                    <div class="form-group form_link">
+                        <span>Link</span>
+                        <input class="form-field inp_link" type="text" >
+                    </div>
+
+                    <div class="form-group form_login">
+                        <span>Login</span>
+                        <input class="form-field inp_login" type="text" >
+                    </div>
+                    <div class="form-group form_pass">
+                        <span>Pass</span>
+                        <input class="form-field inp_pass" type="text" >
+                    </div>
+                    <div class="form-group form_key">
+                        <span>Key</span>
+                        <input class="form-field inp_key" type="password" >
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn_add" type="button" name="button"> Add </button>
+                    <button class="btn btn_pass_add" type="button" name="button"> Add </button>
+                    <button class="btn btn_edit" type="button" name="button"> Edit </button>
+                    <button class="btn btn_pass_edit" type="button" name="button"> Edit </button>
+                    <button class="btn btn_cancel" type="button" name="button"> Cancel </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="header">
+            <div>Launcher</div>
+        </div>
+
+        <div class="side_cont_wrapper">
+            <div class="sidebar">
+                <div class="sidebar_veil">
+                    <div class="margin_top"> </div>
+                    <ul>
+                        <li id="home"><i class="fad fa-home-lg"></i>Home </li>
+                        <li id="games"><i class="fad fa-ghost"></i>Games </li>
+                        <li id="progs"><i class="fab fa-jsfiddle"></i>Programms </li>
+                        <li id="films"><i class="fal fa-video"></i>Films </li>
+                        <li id="mults"><i class="fad fa-image"></i>Mults </li>
+                        <li id="pass"><i class="fab fa-keycdn"></i>Passwords </li>
+                        <li id="cards"><i class="fal fa-spade"></i>Cards</li>
+                        <li id="sapper"><i class="fad fa-bomb"></i>Sapper</li>
+                        <li id="bb"><i class="fal fa-sort-numeric-down"></i></i>bb</li>
+                        <li id="test"><i class="fad fa-bomb"></i></i>Test</li>
+                        <li id="close"><i class="fad fa-times-square"></i>Close</li>
+                    </ul>
+                    <div class="footer">
+                        <div class="games_footer progs_footer films_footer mults_footer">
+                            <i class="fas fa-plus add"></i>
+                        </div>
+                        <div class="pass_footer">
+                            <i class="fad fa-eye non_blur"></i>
+                        </div>
+                        <div class="cards_footer">
+                            <i class="fal fa-redo cards_redo"></i>
+                            <span class="switch_cards"> 54 </span>
+                        </div>
+                        <div class="sapper_footer">
+                            <i class="fal fa-redo sapper_btn"></i>
+                            <i class="fad fa-eraser sapper_clean"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="content">
+                <div class="content_head"></div>
+                <div class="wrappers">
+                  <div class="greeting">
+                      <p>Hello there.</p>
+                  </div>
+                  <div class="games_wrapp list">
+                      <ul></ul>
+                  </div>
+                  <div class="progs_wrapp list">
+                      <ul></ul>
+                  </div>
+                  <div class="films_wrapp list">
+                      <ul></ul>
+                  </div>
+                  <div class="mults_wrapp list">
+                      <ul></ul>
+                  </div>
+                  <div class="pass_wrapp">
+                      <ul>
+                          <li>
+                              <div class="pass_input_div">
+                                  <input id="pass_input" class="pass_input" type="text" name="" value="waiting key..." placeholder="key">
+                              </div>
+                              <div class="columns">
+                                  <div class="column column1"></div>
+                                  <div class="column column2"></div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="cards_wrapp"></div>
+                  <div class="sapper_wrapp">
+                      <ul>
+                          <li>
+                              <div class="bombs_wrapp">
+                                  <span> Осталось:</span>
+                                  <span href="#" class="left_bombs">
+                                      <i class="fal fa-empty-set"></i>
+                                  </span>
+                              </div>
+                              <div class="sapper_field"></div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="bb_wrapp">
+                      <ul>
+                          <li>
+                              <div class="bb_not_field">
+                                <div class="bb_info">
+                                    <div class="bb_steps">Steps: 0</div>
+                                    <div class="bb_timer">00:00:00</div>
+                                </div>
+                                <div class="bb_controls">
+                                    <div class="bb_redo"><i class="fal fa-redo"></i><span>Mix Field</span></div>
+                                     <div class="bb_ai"><i class="fad fa-chart-network"></i><span>Start AI</span></div>
+                                </div>
+                                <div class="bb_sizes">
+                                    <div>
+                                      <div>3x3</div>
+                                      <div>4x4</div>
+                                      <div>5x5</div>
+                                    </div>
+                                    <div >
+                                      <div>6x6</div>
+                                      <div>7x7</div>
+                                      <div>8x8</div>
+                                    </div>
+                                    <div >
+                                      <div>9x9</div>
+                                      <div>10x10</div>
+                                      <div>11x11</div>
+                                    </div>
+                                 </div>
+                               </div>
+
+                              <div class="bb_field"></div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="test_wrapp"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="veil">
+            <div class="list_menu">
+                <div class="open_folder" >Открыть папку </div>
+                <div class="download" >Скачать</div>
+                <div class="edit" >Изменить</div>
+                <div class="remove" >Удалить</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
